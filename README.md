@@ -37,6 +37,11 @@ To get the results of different methods, please run eval.py by setting suitable 
 	main(['--method=netlaprls', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
 	main(['--method=wnngip', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
 	main(['--method=blmnii', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
-
-
+--------
+To change searched hyperparameters, update cv_eval.py: 
+	blmnii_cv_eval() for blmnii,
+	aladin_cv_eval() for aladin,
+	wnngip_cv_eval() for wnngip,
+	netlaprls_cv_eval() for netlaprls,
+--------
 The results can be analysed via result_sign_analysis.py.
