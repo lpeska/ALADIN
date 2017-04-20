@@ -41,6 +41,7 @@ To get the results of different methods, please run eval.py by setting suitable 
 Hyperparameter search
 --------
 By default, hyperparameters are learned via grid search for all evaluated methods on the train set.
+
 	To change searched hyperparameters, update cv_eval.py: 
 	blmnii_cv_eval() for blmnii,
 	aladin_cv_eval() for aladin,
