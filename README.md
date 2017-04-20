@@ -28,13 +28,13 @@ To get the results of different methods, please run eval.py by setting suitable 
         
 	The following examples evaluates the ALADIN method and its competitors on the GPCR dataset (hyperparameter search is included)
     	main(['--method=aladin', '--dataset=gpcr', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1'])   
-    	main(['--method=netlaprls', '--dataset=gpcr', '--cvs=1', '--specify-arg=1'])	
+    	main(['--method=netlaprls', '--dataset=gpcr', '--cvs=1', '--specify-arg=1'])
 	main(['--method=wnngip', '--dataset=gpcr', '--cvs=1', '--specify-arg=1'])
 	main(['--method=blmnii', '--dataset=gpcr', '--cvs=1', '--specify-arg=1'])
 	
 	The following examples performes prediction of top-20 new interactions within the GPCR dataset (hyperparameter search is included)
-	main(['--method=aladin', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1', '--method-opt=hpLearning=1'])    
-    	main(['--method=netlaprls', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
+	main(['--method=aladin', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1', '--method-opt=hpLearning=1'])
+	main(['--method=netlaprls', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
 	main(['--method=wnngip', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
 	main(['--method=blmnii', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
 
