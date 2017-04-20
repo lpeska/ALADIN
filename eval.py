@@ -57,9 +57,7 @@ def main(argv):
         args = {'alpha': 0.7, 'gamma': 1.0, 'sigma': 1.0, 'avg': False}
     if method == 'wnngip':
         args = {'T': 0.8, 'sigma': 1.0, 'alpha': 0.8}
-    if method == 'cmf':
-        args = {'K': 100, 'lambda_l': 0.5, 'lambda_d': 0.125, 'lambda_t': 0.125, 'max_iter': 100}
-     
+      
     #print(model_settings)    
     for key, val in model_settings:
         args[key] = float(eval(val))
@@ -83,19 +81,6 @@ def main(argv):
 
             
         cv_data = cross_validation(X, seeds, cv, invert, num=5)
-        cv_data_optimize_params = cross_validation(X, seedsOptPar, cv, invert, num=5)
-
-        
-    if sp_arg == 0 and predict_num == 0:
-
-        if method == 'aladin':
-            cv_eval.aladin_cv_eval(method, dataset,output_dir, cv_data_optimize_params, X, D, T, cvs, args)
-        if method == 'netlaprls':
-            cv_eval.netlaprls_cv_eval(method, dataset,output_dir, cv_data_optimize_params, X, D, T, cvs, args)
-        if method == 'blmnii':
-            cv_eval.blmnii_cv_eval(method, dataset,output_dir, cv_data_optimize_params, X, D, T, cvs, args)
-        if method == 'wnngip':
-            cv_eval.wnngip_cv_eval(method, dataset,output_dir, cv_data_optimize_params, X, D, T, cvs, args)        
 
     if sp_arg == 1 or predict_num > 0:
         tic = time.clock()     
@@ -107,8 +92,6 @@ def main(argv):
             model = BLMNII(alpha=args['alpha'], gamma=args['gamma'], sigma=args['sigma'], avg=args['avg'])
         if method == 'wnngip':
             model = WNNGIP(T=args['T'], sigma=args['sigma'], alpha=args['alpha'])        
-        if method == 'cmf':
-            model = CMF(K=args['K'], lambda_l=args['lambda_l'], lambda_d=args['lambda_d'], lambda_t=args['lambda_t'], max_iter=args['max_iter'])
         cmd = str(model)
         
         #predict hidden part of the current datasets
