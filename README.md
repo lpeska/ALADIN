@@ -16,9 +16,9 @@ and PyHubs package available from
 http://biointelligence.hu/pyhubs/
 
 --------
-ALADIN works on Python 2.7 (tested on Intel Python 2.7.12).
+ALADIN method
 --------
-ALADIN requires NumPy, scikit-learn and SciPy to run.
+ALADIN works on Python 2.7 (tested on Intel Python 2.7.12) and requires NumPy, scikit-learn and SciPy to run.
 To get the results of different methods, please run eval.py by setting suitable values for the following parameters:
 
 	--method 			set DTI prediction method, i.e. blmnii, netlaprls, wnngip, aladin
@@ -38,10 +38,16 @@ To get the results of different methods, please run eval.py by setting suitable 
 	main(['--method=wnngip', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
 	main(['--method=blmnii', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
 --------
-To change searched hyperparameters, update cv_eval.py: 
+Hyperparameter search
+--------
+By default, hyperparameters are learned via grid search for all evaluated methods on the train set.
+	To change searched hyperparameters, update cv_eval.py: 
 	blmnii_cv_eval() for blmnii,
 	aladin_cv_eval() for aladin,
 	wnngip_cv_eval() for wnngip,
 	netlaprls_cv_eval() for netlaprls,
+	
+--------
+Evaluation
 --------
 The results can be analysed via result_sign_analysis.py.
