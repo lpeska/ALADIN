@@ -169,45 +169,26 @@ def main(argv):
             
 
 if __name__ == "__main__":  
-
+    #prediction of new interactions
     #main(['--method=aladin', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1', '--method-opt=hpLearning=1'])  
     #main(['--method=aladin', '--dataset=ic', '--predict-num=20', '--specify-arg=1', '--method-opt=hpLearning=1'])  
     #main(['--method=aladin', '--dataset=nr', '--predict-num=20', '--specify-arg=1', '--method-opt=hpLearning=1'])  
     #main(['--method=aladin', '--dataset=e', '--predict-num=20', '--specify-arg=1', '--method-opt=hpLearning=1'])  
+    #main(['--method=aladin', '--dataset=kinase', '--predict-num=20', '--specify-arg=1', '--method-opt=hpLearning=1'])  
+    #main(['--method=blmnii', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
+    #main(['--method=wnngip', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
+    #main(['--method=netlaprls', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1']) 
     
+    #using KNN instead of ECkNN in ALADIN method
+    #main(['--method=aladin', '--dataset=kinase', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1 useKNN=1']) 
+    
+    #evaluation on GPCR, IC, E, NR and Kinase datasets
     #main(['--method=aladin', '--dataset=kinase', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1'])  
-    main(['--method=aladin', '--dataset=e', '--cvs=1', '--specify-arg=1', '--method-opt=k=3 featureSetSize=20'])
+    #main(['--method=aladin', '--dataset=nr', '--cvs=1', '--specify-arg=1', '--method-opthpLearning=1'])
+    #main(['--method=aladin', '--dataset=gpcr', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1'])   
+    #main(['--method=aladin', '--dataset=ic', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1'])
+    #main(['--method=aladin', '--dataset=e', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1'])
+    #main(['--method=blmnii', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1'])  
+    #main(['--method=wnngip', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1'])  
+    #main(['--method=netlaprls', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1'])  
     
-    """
-    main(['--method=blmnii', '--dataset=gpcr', '--predict-num=20', '--specify-arg=1'])  
-    main(['--method=blmnii', '--dataset=ic', '--predict-num=20', '--specify-arg=1'])  
-    main(['--method=blmnii', '--dataset=nr', '--predict-num=20', '--specify-arg=1'])  
-    main(['--method=blmnii', '--dataset=e', '--predict-num=20', '--specify-arg=1'])  
-      
-    main(['--method=aladin', '--dataset=kinase', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1 useKNN=1'])  
-    main(['--method=aladin', '--dataset=nr', '--cvs=1', '--specify-arg=1', '--method-opthpLearning=1 useKNN=1'])
-    main(['--method=aladin', '--dataset=gpcr', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1 useKNN=1'])   
-    main(['--method=aladin', '--dataset=ic', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1 useKNN=1'])
-    main(['--method=aladin', '--dataset=e', '--cvs=1', '--specify-arg=1', '--method-opt=hpLearning=1 useKNN=1'])
-    """
-
-    """ 
-    main(['--method=aladin', '--dataset=nr', '--cvs=1', '--specify-arg=1'])
-    main(['--method=aladin', '--dataset=gpcr', '--cvs=1', '--specify-arg=1'])
-    main(['--method=aladin', '--dataset=kinase', '--cvs=1', '--specify-arg=1'])    
-    main(['--method=aladin', '--dataset=ic', '--cvs=1', '--specify-arg=1'])
-    main(['--method=aladin', '--dataset=e', '--cvs=1', '--specify-arg=1'])
-    """ 
-    
-    #main(['--method=netlaprls', '--dataset=kinase', '--cvs=1', '--specify-arg=1'])
-    #main(['--method=aladin', '--dataset=kinase', '--cvs=1', '--specify-arg=1'])
-    
-    """     
-    main(['--method=wnngip', '--dataset=gpcr', '--cvs=1', '--specify-arg=0'])
-    
-    main(['--method=blmnii', '--dataset=gpcr', '--cvs=2', '--specify-arg=0'])
-    main(['--method=blmnii', '--dataset=gpcr', '--cvs=3', '--specify-arg=0'])
-    
-    
-
-    """  
