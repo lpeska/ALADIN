@@ -7,11 +7,13 @@ version 1.0, April 20, 2017
 This package is written by:
 
 Krisztian Buza and Ladislav Peska
+
 Email: peska@ksi.mff.cuni.cz
 
 -------
 This package is based on the PyDTI package by Yong Liu,
 https://github.com/stephenliu0423/PyDTI
+
 and PyHubs package available from
 http://biointelligence.hu/pyhubs/
 
@@ -19,6 +21,7 @@ http://biointelligence.hu/pyhubs/
 ALADIN method
 --------
 ALADIN works on Python 2.7 (tested on Intel Python 2.7.12) and requires NumPy, scikit-learn and SciPy to run.
+
 To get the results of different methods, please run eval.py by setting suitable values for the following parameters:
 
 	--method 			set DTI prediction method, i.e. blmnii, netlaprls, wnngip, aladin
