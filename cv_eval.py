@@ -48,7 +48,7 @@ def aladin_cv_eval(method, dataset,output_dir, cv_data, X, D, T, cvs, para):
     for seed in cv_data.keys():
         for W, test_data, test_label in cv_data[seed]:
             cv2[seed].append((W, test_data, test_label))
-            break
+            
      
     optArg, argList  = [], []
     for ki in [3,5,7]: #
