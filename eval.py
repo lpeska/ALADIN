@@ -23,7 +23,7 @@ def main(argv):
     output_dir = 'output'
     cvs, sp_arg, model_settings, predict_num = 1, 1, [], 0
 
-    seeds = [7771, 8367]#, 22, 1812, 4659
+    seeds = [7771, 8367, 22, 1812, 4659]#
     seedsOptPar = [156]
     # seeds = np.random.choice(10000, 5, replace=False)
     for opt, arg in opts:
