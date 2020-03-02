@@ -20,7 +20,7 @@ http://biointelligence.hu/pyhubs/
 --------
 ALADIN method
 --------
-ALADIN works on Python 2.7 (tested on Intel Python 2.7.12) and requires NumPy, scikit-learn and SciPy to run.
+ALADIN works on Python 2.7 (tested on Intel Python 2.7.12) and requires NumPy <=1.11, scikit-learn and SciPy to run.
 
 To get the results of different methods, please run eval.py by setting suitable values for the following parameters:
 
